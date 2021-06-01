@@ -53,13 +53,13 @@ $(document).ready(function () {
     }
   );
 
-  $(".js--section-origin").waypoint(
+  $(".js--section-self").waypoint(
     function (direction) {
       if (direction == "down") {
-        $(".origin").addClass("underline");
+        $(".self").addClass("underline");
       }
       if (direction == "up") {
-        $(".origin").removeClass("underline");
+        $(".self").removeClass("underline");
       }
     },
     {
@@ -67,135 +67,15 @@ $(document).ready(function () {
     }
   );
 
-  $(".js--section-cause").waypoint(
+  $(".js--section-exist").waypoint(
     function (direction) {
       if (direction == "down") {
-        $(".origin").removeClass("underline");
-        $(".causes").addClass("underline");
+        $(".self").removeClass("underline");
+        $(".exists").addClass("underline");
       }
       if (direction == "up") {
-        $(".origin").addClass("underline");
-        $(".causes").removeClass("underline");
-      }
-    },
-    {
-      offset: "150px;",
-    }
-  );
-  
-  $(".js--message-1").waypoint(
-    function (direction) {
-      if (direction == "down") {
-        $(".js--message-1").addClass("message-ls-hover");
-      }
-      if (direction == "up") {
-        $(".js--message-1").removeClass("message-ls-hover");
-      }
-    },
-    {
-      offset: "50%",
-    }
-  );
-  $(".js--message-2").waypoint(
-    function (direction) {
-      if (direction == "down") {
-        $(".js--message-2").addClass("message-rs-hover");
-        $(".js--message-1").removeClass("message-ls-hover");
-      }
-      if (direction == "up") {
-        $(".js--message-2").removeClass("message-rs-hover");
-        $(".js--message-1").addClass("message-ls-hover");
-      }
-    },
-    {
-      offset: "50%",
-    }
-  );
-  $(".js--message-3").waypoint(
-    function (direction) {
-      if (direction == "down") {
-        $(".js--message-3").addClass("message-ls-hover");
-        $(".js--message-2").removeClass("message-rs-hover");
-      }
-      if (direction == "up") {
-        $(".js--message-3").removeClass("message-ls-hover");
-        $(".js--message-2").addClass("message-rs-hover");
-      }
-    },
-    {
-      offset: "50%",
-    }
-  );
-  $(".js--message-4").waypoint(
-    function (direction) {
-      if (direction == "down") {
-        $(".js--message-4").addClass("message-rs-hover");
-        $(".js--message-3").removeClass("message-ls-hover");
-      }
-      if (direction == "up") {
-        $(".js--message-4").removeClass("message-rs-hover");
-        $(".js--message-3").addClass("message-ls-hover");
-      }
-    },
-    {
-      offset: "50%",
-    }
-  );
-  $(".js--message-5").waypoint(
-    function (direction) {
-      if (direction == "down") {
-        $(".js--message-5").addClass("message-ls-hover");
-        $(".js--message-4").removeClass("message-rs-hover");
-      }
-      if (direction == "up") {
-        $(".js--message-5").removeClass("message-ls-hover");
-        $(".js--message-4").addClass("message-rs-hover");
-      }
-    },
-    {
-      offset: "50%",
-    }
-  );
-  $(".js--message-6").waypoint(
-    function (direction) {
-      if (direction == "down") {
-        $(".js--message-6").addClass("message-rs-hover");
-        $(".js--message-5").removeClass("message-ls-hover");
-      }
-      if (direction == "up") {
-        $(".js--message-6").removeClass("message-rs-hover");
-        $(".js--message-5").addClass("message-ls-hover");
-      }
-    },
-    {
-      offset: "50%",
-    }
-  );
-  $(".js--message-7").waypoint(
-    function (direction) {
-      if (direction == "down") {
-        $(".js--message-7").addClass("message-ls-hover");
-        $(".js--message-6").removeClass("message-rs-hover");
-      }
-      if (direction == "up") {
-        $(".js--message-7").removeClass("message-ls-hover");
-        $(".js--message-6").addClass("message-rs-hover");
-      }
-    },
-    {
-      offset: "50%",
-    }
-  );
-
-  $(".js--section-effect").waypoint(
-    function (direction) {
-      if (direction == "down") {
-        $(".causes").removeClass("underline");
-        $(".effect").addClass("underline");
-      }
-      if (direction == "up") {
-        $(".causes").addClass("underline");
-        $(".effect").removeClass("underline");
+        $(".self").addClass("underline");
+        $(".exists").removeClass("underline");
       }
     },
     {
@@ -203,15 +83,15 @@ $(document).ready(function () {
     }
   );
 
-  $(".js--section-solution").waypoint(
+  $(".js--section-worth").waypoint(
     function (direction) {
       if (direction == "down") {
-        $(".effect").removeClass("underline");
-        $(".solution").addClass("underline");
+        $(".exists").removeClass("underline");
+        $(".worth").addClass("underline");
       }
       if (direction == "up") {
-        $(".effect").addClass("underline");
-        $(".solution").removeClass("underline");
+        $(".exists").addClass("underline");
+        $(".worth").removeClass("underline");
       }
     },
     {
@@ -219,73 +99,89 @@ $(document).ready(function () {
     }
   );
 
-  $(".js--solution-support-1").waypoint(
+  $(".js--section-aware").waypoint(
     function (direction) {
       if (direction == "down") {
-        $(".js--solution-support-1").addClass("solution-support-rs-hover");
+        $(".worth").removeClass("underline");
+        $(".aware").addClass("underline");
       }
       if (direction == "up") {
-        $(".js--solution-support-1").removeClass("solution-support-rs-hover");
+        $(".worth").addClass("underline");
+        $(".aware").removeClass("underline");
+      }
+    },
+    {
+      offset: "150px;",
+    }
+  );
+
+  $(".js--aware-support-1").waypoint(
+    function (direction) {
+      if (direction == "down") {
+        $(".js--aware-support-1").addClass("aware-support-rs-hover");
+      }
+      if (direction == "up") {
+        $(".js--aware-support-1").removeClass("aware-support-rs-hover");
       }
     },
     {
       offset: "50%",
     }
   );
-  $(".js--solution-support-2").waypoint(
+  $(".js--aware-support-2").waypoint(
     function (direction) {
       if (direction == "down") {
-        $(".js--solution-support-2").addClass("solution-support-ls-hover");
-        $(".js--solution-support-1").removeClass("solution-support-rs-hover");
+        $(".js--aware-support-2").addClass("aware-support-ls-hover");
+        $(".js--aware-support-1").removeClass("aware-support-rs-hover");
       }
       if (direction == "up") {
-        $(".js--solution-support-2").removeClass("solution-support-ls-hover");
-        $(".js--solution-support-1").addClass("solution-support-rs-hover");
+        $(".js--aware-support-2").removeClass("aware-support-ls-hover");
+        $(".js--aware-support-1").addClass("aware-support-rs-hover");
       }
     },
     {
       offset: "50%",
     }
   );
-  $(".js--solution-support-3").waypoint(
+  $(".js--aware-support-3").waypoint(
     function (direction) {
       if (direction == "down") {
-        $(".js--solution-support-3").addClass("solution-support-rs-hover");
-        $(".js--solution-support-2").removeClass("solution-support-ls-hover");
+        $(".js--aware-support-3").addClass("aware-support-rs-hover");
+        $(".js--aware-support-2").removeClass("aware-support-ls-hover");
       }
       if (direction == "up") {
-        $(".js--solution-support-3").removeClass("solution-support-rs-hover");
-        $(".js--solution-support-2").addClass("solution-support-ls-hover");
+        $(".js--aware-support-3").removeClass("aware-support-rs-hover");
+        $(".js--aware-support-2").addClass("aware-support-ls-hover");
       }
     },
     {
       offset: "50%",
     }
   );
-  $(".js--solution-support-4").waypoint(
+  $(".js--aware-support-4").waypoint(
     function (direction) {
       if (direction == "down") {
-        $(".js--solution-support-4").addClass("solution-support-ls-hover");
-        $(".js--solution-support-3").removeClass("solution-support-rs-hover");
+        $(".js--aware-support-4").addClass("aware-support-ls-hover");
+        $(".js--aware-support-3").removeClass("aware-support-rs-hover");
       }
       if (direction == "up") {
-        $(".js--solution-support-4").removeClass("solution-support-ls-hover");
-        $(".js--solution-support-3").addClass("solution-support-rs-hover");
+        $(".js--aware-support-4").removeClass("aware-support-ls-hover");
+        $(".js--aware-support-3").addClass("aware-support-rs-hover");
       }
     },
     {
       offset: "50%",
     }
   );
-  $(".js--solution-support-5").waypoint(
+  $(".js--aware-support-5").waypoint(
     function (direction) {
       if (direction == "down") {
-        $(".js--solution-support-5").addClass("solution-support-rs-hover");
-        $(".js--solution-support-4").removeClass("solution-support-ls-hover");
+        $(".js--aware-support-5").addClass("aware-support-rs-hover");
+        $(".js--aware-support-4").removeClass("aware-support-ls-hover");
       }
       if (direction == "up") {
-        $(".js--solution-support-5").removeClass("solution-support-rs-hover");
-        $(".js--solution-support-4").addClass("solution-support-ls-hover");
+        $(".js--aware-support-5").removeClass("aware-support-rs-hover");
+        $(".js--aware-support-4").addClass("aware-support-ls-hover");
       }
     },
     {
@@ -293,16 +189,15 @@ $(document).ready(function () {
     }
   );
 
-
-  $(".js--solution-conclusion").waypoint(
+  $(".js--aware-conclusion").waypoint(
     function (direction) {
       if (direction == "down") {
-        $(".js--solution-conclusion").addClass("solution-conclusion-hover");
-        $(".js--solution-support-5").removeClass("solution-support-rs-hover");
+        $(".js--aware-conclusion").addClass("aware-conclusion-hover");
+        $(".js--aware-support-5").removeClass("aware-support-rs-hover");
       }
       if (direction == "up") {
-        $(".js--solution-conclusion").removeClass("solution-conclusion-hover");
-        $(".js--solution-support-5").addClass("solution-support-rs-hover");
+        $(".js--aware-conclusion").removeClass("aware-conclusion-hover");
+        $(".js--aware-support-5").addClass("aware-support-rs-hover");
       }
     },
     {

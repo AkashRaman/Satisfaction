@@ -123,40 +123,37 @@ a {
 }
 
 #section-cover h2,
-.section-cause h2,
-.section-origin h2,
-.section-effect h2,
-.section-solution h2,
+.section-exist h2,
+.section-self h2,
+.section-worth h2,
+.section-aware h2,
 .footer-title {
   width: fit-content;
   font-size: 240%;
   font-weight: 600;
   border-bottom: 4px solid #fff;
   padding: 0 20px 0 20px;
-  transform-origin: center;
+  transform-self: center;
   transition: all 0.2s;
 }
 
+.section-exist h2,
+.section-self h2,
+.section-worth h2,
+.section-aware h2,
 #section-cover h2 {
-  border-color: #42b0ff;
-}
-
-.section-cause h2,
-.section-origin h2,
-.section-effect h2,
-.section-solution h2 {
   border-color: #00ff19;
 }
 
-.section-origin h2 {
+.section-self h2 {
   margin-bottom: 55px;
 }
 
 #section-cover h2:hover,
 .footer-title:hover,
-.section-origin h2:hover,
-.section-effect h2:hover,
-.section-solution h2:hover {
+.section-self h2:hover,
+.section-worth h2:hover,
+.section-aware h2:hover {
   transform: scale(1.05);
 }
 
@@ -170,7 +167,7 @@ a {
   height: 110px;
   display: block;
   left: 50%;
-  transform-origin: left;
+  transform-self: left;
   transform: translate(-50%, 0%);
   margin-top: 0;
   margin-bottom: 0;
@@ -187,12 +184,12 @@ a {
 }
 
 #section-synopsis-detail h2,
-.solution-h2 {
+.aware-h2 {
   width: fit-content;
   position: relative;
   display: block;
   left: -50%;
-  transform-origin: right;
+  transform-self: right;
   transform: translate(50%, 0%);
   margin: 0 auto 20px auto;
   margin-bottom: 0;
@@ -205,7 +202,7 @@ a {
 }
 
 #section-synopsis-detail h2:hover,
-.solution-h2:hover {
+.aware-h2:hover {
   transform: translateX(52.5%);
 }
 
@@ -219,7 +216,7 @@ a {
   border-bottom: 4px solid #00ff19;
   transition: all 0.2s;
   left: 50%;
-  transform-origin: right;
+  transform-self: right;
   transform: translate(-50%, 100%);
   padding: 0 20px;
   text-align: left;
@@ -251,7 +248,7 @@ header {
       rgba(0, 0, 0, 0.9),
       rgba(0, 0, 0, 0.9)
     ),
-    url(img/loneliness.jpg);
+    url(img/satisfaction.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -295,8 +292,8 @@ header {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   float: right;
-  -webkit-transform-origin: top left;
-  transform-origin: top right;
+  -webkit-transform-self: top left;
+  transform-self: top right;
 }
 
 .btn-discover:hover,
@@ -481,22 +478,22 @@ nav {
       rgba(255, 255, 255, 0),
       rgba(255, 255, 255, 0),
       rgba(255, 255, 255, 0),
-      rgba(255, 255, 255, 0),
       rgba(255, 255, 255, 0.75),
       rgba(255, 255, 255, 1),
       rgba(255, 255, 255, 1),
       rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 1),
       rgba(255, 255, 255, 0.75),
-      rgba(255, 255, 255, 0),
       rgba(255, 255, 255, 0),
       rgba(255, 255, 255, 0),
       rgba(255, 255, 255, 0),
       rgba(255, 255, 255, 0),
       rgba(255, 255, 255, 0)
     ),
-    url(img/Loneliness-2.jpg);
+    url(img/cover.jpg);
   background-size: cover;
-  background-position: right;
+  background-position: center;
   background-repeat: no-repeat;
   -webkit-box-shadow: 0 0px 10px 0px rgba(32, 33, 36, 0.75);
   box-shadow: 0 0px 10px 0px rgba(32, 33, 36, 0.75);
@@ -507,11 +504,11 @@ nav {
   width: fit-content;
   padding: 10.5px 40px;
   color: #000;
-  background-color: #4fc6fc;
+  background-color: #00ff19;
   border-radius: 200px;
   text-align: center;
   transition: all 0.3s;
-  transform-origin: center;
+  transform-self: center;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   font-weight: 900;
@@ -555,31 +552,6 @@ nav {
 }
 
 .synopsis-para-row {
-  margin-top: -13px;
-  background-image: linear-gradient(
-      to left,
-      rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0),
-      rgba(255, 255, 255, 0.75),
-      rgba(255, 255, 255, 1),
-      rgba(255, 255, 255, 1),
-      rgba(255, 255, 255, 1),
-      rgba(255, 255, 255, 1),
-      rgba(255, 255, 255, 1),
-      rgba(255, 255, 255, 1),
-      rgba(255, 255, 255, 1),
-      rgba(255, 255, 255, 1)
-    ),
-    url(img/synopsis.jpg);
-  background-size: contain;
-  background-position: right;
-  background-repeat: no-repeat;
-}
-
-#section-synopsis div:last-child div {
-  float: left;
   text-align: right;
 }
 
@@ -625,28 +597,28 @@ nav {
   padding: 30px;
 }
 
-/*----------------------------------------------- SECTION-origin,cause,effect  ---------------------------------------------------*/
+/*----------------------------------------------- SECTION-self,exist,worth  ---------------------------------------------------*/
 
-.section-cause,
-.section-origin {
+.section-exist,
+.section-self {
   padding: 55px 2.5%;
   box-shadow: 0px 21px 10px -18px rgba(32, 33, 36, 0.75) inset;
 }
 
-#section-cause-link,
-#section-origin-link,
-#section-effect-link {
+#section-exist-link,
+#section-self-link,
+#section-worth-link {
   margin-top: 0 !important;
   box-shadow: 0 0px 10px 2px rgba(32, 33, 36, 0.75);
   z-index: 10;
 }
-#section-origin-link,
-#section-effect-link {
+#section-self-link,
+#section-worth-link {
   height: 54px;
 }
 
-.section-cause div li h3,
-.section-effect h3 {
+.section-exist div li h3,
+.section-worth h3 {
   width: fit-content;
   margin: 30px 0 15px 0;
   padding: 0 10px 0 0;
@@ -654,14 +626,14 @@ nav {
   transition: all 0.2s;
 }
 
-.section-cause div li h3:hover,
-.section-effect h3:hover {
+.section-exist div li h3:hover,
+.section-worth h3:hover {
   border-color: #00ff19;
 }
 
-/*----------------------------------------------- SECTION-origin  ---------------------------------------------------*/
+/*----------------------------------------------- SECTION-self  ---------------------------------------------------*/
 
-.section-origin {
+.section-self {
   background-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 0),
@@ -673,72 +645,72 @@ nav {
       rgba(17, 17, 17, 1),
       rgb(17, 17, 17)
     ),
-    url(img/Loneliness-origin.png);
+    url(img/self-satisfaction.jpg);
   background-size: cover;
+  background-position: bottom left;
   background-attachment: fixed;
   background-repeat: no-repeat;
   color: #fff;
 }
 
-.section-origin div {
+.section-self div {
   float: right;
 }
 
-.origin-para-c,
-.cause-para-c {
+.self-para-c,
+.exist-para-c {
   width: 62.5%;
   margin: 0 auto;
   text-align: center;
 }
 
-.origin-para-c:last-child,
-.cause-para-c:last-child {
+.self-para-c:last-child,
+.exist-para-c:last-child {
   margin-top: 55px;
 }
 
-.origin-para-rs,
-.cause-para-rs {
+.self-para-rs,
+.exist-para-rs {
   width: 75%;
   margin-top: 40px;
   margin-left: 25%;
   text-align: right;
 }
 
-.origin-para-ls,
-.cause-para-ls {
+.self-para-ls,
+.exist-para-ls {
   width: 75%;
   margin-top: 40px;
   text-align: left;
 }
 
-/*----------------------------------------------- SECTION-CAUSE  ---------------------------------------------------*/
+/*----------------------------------------------- SECTION-exist  ---------------------------------------------------*/
 
-.section-cause {
+.section-exist {
   background-image: url(img/modern-city2.jpg);
   background-size: cover;
+  background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
 
-.section-cause div {
+.section-exist div {
   position: relative;
   text-align: right;
   height: fit-content;
   margin: 0;
   padding: 55px;
   width: 45%;
-  border-radius: 31px;
-  background-color: rgba(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.9);
   text-align: center;
   box-shadow: 0 2px 5px 2px rgba(64, 60, 67, 0.26);
   transition: all 0.3s;
 }
 
 .message-ls {
-  border-top-left-radius: 0px !important;
   margin-top: 50px !important;
   text-align: left !important;
-  transform-origin: top left;
+  transform-self: top left;
 }
 
 .message-ls-hover {
@@ -746,77 +718,50 @@ nav {
 }
 
 .message-ls:first-child {
-  padding: 22.5px;
+  padding: 55px;
 }
 
-.message-ls:before {
-  content: "";
-  width: 0px;
-  height: 0px;
-  position: absolute;
-  border-left: 15px solid transparent;
-  border-right: 15px solid #fff;
-  border-top: 15px solid #fff;
-  border-bottom: 15px solid transparent;
-  left: -14px;
-  top: 0px;
-}
 .message-rs {
-  border-top-right-radius: 0px !important;
   margin: 50px 0 0 55% !important;
   text-align: right !important;
-  background-color: #42b0ff !important;
-  transform-origin: top right;
+  transform-self: top right;
 }
 
 .message-rs-hover {
   transform: scale(1.05) !important;
 }
 
-.message-rs:before {
-  content: "";
-  width: 0px;
-  height: 0px;
-  position: absolute;
-  border-left: 15px solid #42b0ff;
-  border-right: 15px solid transparent;
-  border-top: 15px solid #42b0ff;
-  border-bottom: 15px solid transparent;
-  right: -14px;
-  top: 0px;
-}
-
-.section-cause div img {
-  transform-origin: center;
+.section-exist div img {
+  transform-self: center;
   transition: all 0.3s;
 }
 
-.section-cause div img:hover {
+.section-exist div img:hover {
   transform: scale(1.05);
 }
 
-.cause-para-c {
+.exist-para-c {
   margin: 0 auto;
   text-align: center;
 }
 
-.cause-para-c:last-child {
+.exist-para-c:last-child {
   margin-top: 55px;
 }
 
-.cause-para-rs {
+.exist-para-rs {
 }
 
-.cause-para-ls {
+.exist-para-ls {
 }
 
-/*----------------------------------------------- SECTION-EFFECT  ---------------------------------------------------*/
+/*----------------------------------------------- SECTION-worth  ---------------------------------------------------*/
 
-.section-effect {
+.section-worth {
   padding: 0px;
 }
 
-.effect-1 {
+.worth-1 {
   box-shadow: 0px 21px 10px -18px rgba(32, 33, 36, 0.75) inset;
   background-image: linear-gradient(
       to left,
@@ -829,13 +774,13 @@ nav {
       rgba(255, 255, 255, 1),
       rgba(255, 255, 255, 1)
     ),
-    url(img/effect.jpg);
+    url(img/worth.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.effect-2 {
+.worth-2 {
   box-shadow: 0px -11px 10px -18px rgba(0, 0, 0, 0.75) inset;
   background-image: linear-gradient(
       to right,
@@ -848,14 +793,14 @@ nav {
       rgba(255, 255, 255, 1),
       rgba(255, 255, 255, 1)
     ),
-    url(img/effect-2.jpg);
+    url(img/worth-2.jpg);
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
   text-align: right;
 }
 
-.effect-ls {
+.worth-ls {
   width: 100%;
   margin: 0;
   padding: 55px 2.5% 0px 2.5%;
@@ -913,11 +858,11 @@ nav {
     rgba(255, 255, 255, 1)
   );
   background-size: cover;
-  background-position: bottom;
+  background-position: bottom left;
   background-repeat: no-repeat;
 }
 
-.effect-rs {
+.worth-rs {
   width: 100%;
   margin: 0;
   padding: 0px 2.5% 55px 2.5%;
@@ -979,43 +924,43 @@ nav {
   background-repeat: no-repeat;
   text-align: right;
 }
-.effect-rs div {
+.worth-rs div {
   float: right;
 }
 
-.effect-sep {
+.worth-sep {
   width: 100%;
   height: 55px;
 }
 
-/*----------------------------------------------- SECTION-SOLUTION  ---------------------------------------------------*/
+/*----------------------------------------------- SECTION-aware  ---------------------------------------------------*/
 
-.section-solution {
+.section-aware {
   background-color: rgb(255, 250, 250);
   box-shadow: 0 0px 10px 2px rgba(32, 33, 36, 0.75);
   padding: 55px 0%;
 }
 
-#solution-main-para {
+#aware-main-para {
   width: 62.5%;
   margin: 0 auto;
   text-align: center;
 }
 
-.solution-para-container {
+.aware-para-container {
   margin: 55px 0 0 0;
   background-color: #181818;
   padding: 55px 0%;
   position: relative;
 }
 
-.solution-para-container:first-child {
+.aware-para-container:first-child {
   margin-top: 55px;
 }
 
-.solution-support-1,
-.solution-support-3,
-.solution-support-5 {
+.aware-support-1,
+.aware-support-3,
+.aware-support-5 {
   background-color: #fff;
   width: 85%;
   margin: 0;
@@ -1028,19 +973,19 @@ nav {
   transform: translate(-41.2%, 0);
 }
 
-.solution-support-3,
-.solution-support-5 {
+.aware-support-3,
+.aware-support-5 {
   margin: 55px 0 0 0;
 }
 
-.solution-support-ls-hover {
+.aware-support-ls-hover {
   width: calc(91.5% + 15px) !important;
   border-left: 7.5vw solid #fff !important;
   border-right: 7.5px solid #00ff19 !important;
 }
 
-.solution-support-2,
-.solution-support-4 {
+.aware-support-2,
+.aware-support-4 {
   background-color: #fff;
   width: 85%;
   margin: 55px 0 0 0;
@@ -1053,14 +998,14 @@ nav {
   left: 0%;
 }
 
-.solution-support-rs-hover {
+.aware-support-rs-hover {
   left: calc(50% - 4.3px);
   width: calc(92.5% + 15px);
   border-left: 7.5px solid #00ff19;
   border-right: 7.5vw solid #fff;
 }
 
-.solution-conclusion {
+.aware-conclusion {
   width: 100%;
   margin: 55px 0 0 0;
   padding: 9.5% 2.5% 2% 2.5%;
@@ -1068,28 +1013,29 @@ nav {
   background-image: url(img/solution-conclusion.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: center;
   position: relative;
-  transform-origin: center;
+  transform-self: center;
   transition: all 0.3s;
 }
 
-.solution-conclusion-hover {
+.aware-conclusion-hover {
   transform: scale(1.02);
 }
 
-.solution-conclusion h3 {
+.aware-conclusion h3 {
   width: 50%;
   margin: 0 auto;
   line-height: 1.2rem;
-  padding: 5px;
-  background-color: rgba(255, 255, 255, 0.5);
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.75);
   clip-path: polygon(50% 0, 100% 0%, 100% 100%, 50% 100%);
+  word-spacing: 4px;
 }
 
 #h3-white {
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.75);
   clip-path: polygon(0% 0, 50% 0%, 50% 100%, 0 100%);
   position: relative;
   transform: translate(0, -100%);
@@ -1215,10 +1161,10 @@ footer {
 }
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background: black;
+  background: #00ff19;
   box-shadow: inset 0 0 20px rgba(245, 245, 245, 0.671);
 }
 ::-webkit-scrollbar-track {
-  margin-top: 80px;
+  margin-top: 55px;
   border-radius: 10px;
 }
